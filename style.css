@@ -523,6 +523,15 @@ hr {
     min-width: 120px;
     height: 90px;
 }
+.footerlist ul{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerlist {
+    padding: 10px;
+  }
+
 
 }
 
