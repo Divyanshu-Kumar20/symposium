@@ -272,7 +272,7 @@ main {
       .m3bImage {
         width: 100%;
         display: grid;
-        grid-template-rows: repeat(2, minmax(100px,auto));
+        grid-template-rows: repeat(2, minmax(100px, auto));
         & > div:first-child {
           padding: 1rem;
           background-color: #3b82f6;
@@ -313,17 +313,17 @@ main {
                 font-size: 1.5rem;
                 font-weight: 500;
               }
-              p{
+              p {
                 font-size: 1.3rem;
                 font-weight: 300;
               }
             }
-            p{
+            p {
               font-size: 1rem;
             }
-            button{
+            button {
               margin: 0 auto;
-              width:fit-content;
+              width: fit-content;
               background-color: #3b82f6;
               padding: 1.5rem 4rem;
               font-size: 1.4rem;
@@ -331,6 +331,162 @@ main {
             }
           }
         }
+      }
+    }
+  }
+
+  .main4 {
+    background-color: #0c1b2c;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    p {
+      font-size: 1.3rem;
+      color: #dadada83;
+    }
+    .stats {
+      display: grid;
+      gap: 2rem;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      h4 {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: 2rem;
+    }
+  }
+
+  .main5 {
+    padding: 2rem 1.5rem;
+    display: grid;
+    gap: 1.8rem;
+    h4 {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .mDate {
+      @include flex-layout(1rem);
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .date {
+        &:hover {
+          border: 1px solid #0c1b2c;
+          background-color: #0c1b2c;
+        }
+        width: fit-content;
+        padding: 1rem 2rem;
+        align-items: center;
+        @include flex-layout(0.1rem);
+        flex-direction: column;
+        border: 1px solid #47c4fe;
+        h3 {
+          font-size: 2.3rem;
+          font-weight: 300;
+        }
+        h3,
+        p {
+          color: #dadada83;
+        }
+      }
+    }
+    .m5Bottom {
+      border: 1px solid #435972;
+      border-radius: 2rem;
+      padding: 1.4rem 2rem;
+      display: grid;
+      gap: 1.4rem;
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      hr {
+        background-color: #3714ff;
+      }
+      .m5bImg {
+        display: flex;
+        align-items: center;
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          transition: transform 0.5s ease;
+          &:nth-child(2) {
+            margin-left: -10px;
+          }
+        }
+      }
+      .guest {
+        display: grid;
+        gap: 0.4rem;
+        p:first-child {
+          color: #435972;
+        }
+        p:nth-child(2) {
+          font-size: 1rem;
+          font-family:
+            "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        }
+        BUTTON {
+          color: #3b82f6;
+          border: 2px solid #3b82f6;
+          width: fit-content;
+          background-color: transparent;
+          border-radius: 0.4rem;
+          padding: 0.6rem 2rem;
+        }
+      }
+      #guest {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+
+      /* Cool hover effect: spread them out when hovering */
+      .m5bImg:hover img:nth-child(2) {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .main6 {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+    background-color: #0c1b2c;
+    h3 {
+      font-size: 1.9rem;
+      font-weight: 500;
+    }
+    p {
+      color: #435972;
+    }
+    .attendees {
+      @include flex-layout(2rem);
+      flex-direction: row;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+      P {
+        color: white;
+      }
+      i {
+        color: goldenrod;
       }
     }
   }
