@@ -692,9 +692,9 @@ hr {
 }
 
 /* =========================================================
-   MOBILE (400px - 600px)  ✅ Whole page responsive
+   MOBILE (300px - 600px)  ✅ Whole page responsive
    ========================================================= */
-@media (min-width: 400px) and (max-width: 600px){
+@media (min-width: 300px) and (max-width: 600px){
 
   /* ---------- NAVBAR (mobile sidebar) ---------- */
   .navbar{
